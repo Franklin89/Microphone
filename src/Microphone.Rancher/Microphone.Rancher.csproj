@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Microphone.Rancher Class Library</Description>
+    <VersionPrefix>0.6.6</VersionPrefix>
+    <Authors>Roger Johansson</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Microphone.Rancher</AssemblyName>
+    <PackageId>Microphone.Rancher</PackageId>
+    <PackageTags>rancher;docker;asp.net</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/rogeralsing/Microphone/master/Resources/microphone.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/rogeralsing/Microphone</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/rogeralsing/Microphone/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
+    <PackageReference Include="System.Net.Http" Version="4.1.1" />
+  </ItemGroup>
+
+</Project>

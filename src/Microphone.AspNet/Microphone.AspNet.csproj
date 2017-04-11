@@ -1,27 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Microphone.Nancy Class Library</Description>
-    <VersionPrefix>0.6.6</VersionPrefix>
+    <Description>Microphone.Asp5 Class Library</Description>
+    <VersionPrefix>0.6.7</VersionPrefix>
     <Authors>Roger Johansson</Authors>
-    <TargetFrameworks>netstandard1.6;net452</TargetFrameworks>
-    <AssemblyName>Microphone.Nancy</AssemblyName>
-    <PackageId>Microphone.Nancy</PackageId>
+    <TargetFrameworks>netstandard1.6;net451</TargetFrameworks>
+    <AssemblyName>Microphone.AspNet</AssemblyName>
+    <PackageId>Microphone.AspNet</PackageId>
     <PackageTags>service discovery;consul;etcd;nancy;asp.net</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/rogeralsing/Microphone/master/Resources/microphone.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/rogeralsing/Microphone</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/rogeralsing/Microphone/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
-    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.0</NetStandardImplicitPackageVersion>
-    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'net452' ">$(PackageTargetFallback);dotnet5.4</PackageTargetFallback>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'net451' ">$(PackageTargetFallback);dotnet5.4</PackageTargetFallback>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,13 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="1.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="1.0.2" />
-    <PackageReference Include="System.Net.Http" Version="4.1.1" />
-    <PackageReference Include="Nancy" Version="2.0.0-barneyrubble" />
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
