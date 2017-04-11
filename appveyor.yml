@@ -1,0 +1,12 @@
+version: '0.6.7.preview-{build}'
+configuration:
+- Release
+platform: Any CPU
+init:
+- ps: $Env:LABEL = "preview-" + $Env:APPVEYOR_BUILD_NUMBER
+before_build:
+- dotnet restore "src\Microphone.sln"
+build_script:
+- dotnet build "src\Microphone.sln" -c %CONFIGURATION% --version-suffix %LABEL% -o artifacts
+artifacts:
+- path: artifacts\**\*.*
