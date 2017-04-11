@@ -8,6 +8,6 @@ init:
 before_build:
 - dotnet restore "src\Microphone.sln"
 build_script:
-- dotnet build "src\Microphone.sln" -c %CONFIGURATION% --version-suffix "preview-{build}" -o artifacts
+- dotnet build "src\Microphone.sln" -c %CONFIGURATION% --version-suffix %LABEL% -o artifacts
 artifacts:
 - path: \**\artifacts\**\*.*
