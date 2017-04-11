@@ -4,8 +4,6 @@ VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microphone.Core", "Microphone.Core\Microphone.Core.csproj", "{7A418687-1FFB-45C6-89BD-C0F0D9910C0D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemo", "AspNetCoreDemo\AspNetCoreDemo.csproj", "{46A94993-2FEF-443E-BAF7-8404A60415F1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microphone.AspNet", "Microphone.AspNet\Microphone.AspNet.csproj", "{A528336E-6C99-4C2C-A4AE-1886F7E65164}"
 EndProject
 Global
@@ -30,18 +28,6 @@ Global
 		{7A418687-1FFB-45C6-89BD-C0F0D9910C0D}.Release|x64.Build.0 = Release|Any CPU
 		{7A418687-1FFB-45C6-89BD-C0F0D9910C0D}.Release|x86.ActiveCfg = Release|Any CPU
 		{7A418687-1FFB-45C6-89BD-C0F0D9910C0D}.Release|x86.Build.0 = Release|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Debug|x64.Build.0 = Debug|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Debug|x86.Build.0 = Debug|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Release|x64.ActiveCfg = Release|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Release|x64.Build.0 = Release|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Release|x86.ActiveCfg = Release|Any CPU
-		{46A94993-2FEF-443E-BAF7-8404A60415F1}.Release|x86.Build.0 = Release|Any CPU
 		{A528336E-6C99-4C2C-A4AE-1886F7E65164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A528336E-6C99-4C2C-A4AE-1886F7E65164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A528336E-6C99-4C2C-A4AE-1886F7E65164}.Debug|x64.ActiveCfg = Debug|Any CPU
