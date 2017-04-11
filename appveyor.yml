@@ -1,4 +1,5 @@
 version: '0.6.7.preview-{build}'
+image: Visual Studio 2017
 configuration:
 - Release
 platform: Any CPU
